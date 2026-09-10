@@ -1,0 +1,42 @@
+.home{
+    border: 0.5rem solid black;
+    text-align: center;
+    width: auto;
+}
+
+.caja{
+    border: 0.2rem solid black;
+    margin-top: 2%;
+}
+
+.indice-recetas{
+    padding: 2%;
+}
+
+.recetario{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedor-gral{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.receta{
+    width: 95%;
+    border: 0.2rem solid black;
+    margin-top: 2%;
+    background-color: lightblue;
+    padding: 1rem;
+}
+
+.titulo-receta{
+    display: flex;
+    justify-content: space-between;
+}
+
+html {
+    scroll-behavior: smooth;
+}
