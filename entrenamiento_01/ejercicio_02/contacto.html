@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<div class="contenedor">
+
+    <nav class="menu">
+        <a href="index.html">HOME</a>
+        |
+        <a href="contacto.html">CONTACTO</a>
+    </nav>
+
+    <main class="principal">
+
+        <form class="formulario">
+
+            <div class="campo">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" required>
+            </div>
+
+            <div class="campo">
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" required>
+            </div>
+
+            <div class="campo">
+                <label for="telefono">Tel:</label>
+                <input type="tel" id="telefono" required>
+            </div>
+
+            <div class="campo">
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" required></textarea>
+            </div>
+
+            <div class="botones">
+                <button class="enviar" type="submit">Enviar</button>
+                <button class="cancelar" type="reset">Cancelar</button>
+            </div>
+
+        </form>
+
+    </main>
+
+    <footer class="pie">
+        Todos los derechos reservados
+    </footer>
+
+</div>
+
+</body>
+
+</html>
