@@ -1,0 +1,69 @@
+* {
+    margin: 0;
+    padding: 0;
+     box-sizing: border-box;
+}
+
+.modelo {
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.caja {
+    height: 33.3%;
+
+    border: 0.1em solid black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.caja1,
+.caja3,
+.caja5 {
+    flex-basis: 74.8%;
+}
+
+.caja2,
+.caja4,
+.caja6 {
+    flex-basis: 24.8%;
+}
+
+.caja1,
+.caja2 {
+    background-color: #d5e8d0;
+}
+
+.caja3,
+.caja4 {
+    background-color: #fff2cc;
+}
+
+.caja5 {
+    background-color: #f4cccc;
+}
+
+.caja6 {
+    background-color: #c9daf8;
+}
+
+@media (max-width: 48em) {
+
+    .caja2,
+    .caja4,
+    .caja5 {
+        display: none;
+    }
+
+    .caja1,
+    .caja3,
+    .caja6 {
+        flex-basis: 99.8%;
+        height: 33.3%;
+    }
+}

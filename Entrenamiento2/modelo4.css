@@ -1,0 +1,214 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.modelo4 {
+    width: 100%;
+    height: 100vh;
+}
+
+.caja {
+    border: 0.1em solid black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.vista-normal {
+    width: 100%;
+    height: 100%;
+}
+
+.fila-superior {
+    width: 100%;
+    height: 66%;
+
+    display: flex;
+}
+
+.fila-superior .caja1,
+.fila-superior .caja4 {
+    flex-basis: 25%;
+}
+
+.columna-central {
+    flex-basis: 50%;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.columna-central .caja {
+    width: 100%;
+    height: 50%;
+}
+
+.fila-inferior {
+    width: 100%;
+    height: 34%;
+
+    display: flex;
+}
+
+.fila-inferior .caja {
+    flex-basis: 50%;
+}
+
+
+
+.caja1,
+.caja4 {
+    background-color: #d5e8d0;
+}
+
+.caja2,
+.caja3 {
+    background-color: #fce5cd;
+}
+
+.caja5 {
+    background-color: #f4cccc;
+}
+
+.caja6 {
+    background-color: #c9daf8;
+}
+
+
+
+.vista-tablet {
+    display: none;
+}
+
+
+
+@media (min-width: 30.01em) and (max-width: 64em) {
+
+    .vista-normal {
+        display: none;
+    }
+
+    .vista-tablet {
+        width: 100%;
+        height: 100%;
+
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .vista-tablet .caja {
+        height: 33.33%;
+    }
+
+    .vista-tablet .caja1,
+    .vista-tablet .caja3,
+    .vista-tablet .caja5 {
+        flex-basis: 70%;
+    }
+
+    .vista-tablet .caja2,
+    .vista-tablet .caja4,
+    .vista-tablet .caja6 {
+        flex-basis: 30%;
+    }
+
+    .vista-tablet .caja1,
+    .vista-tablet .caja2 {
+        background-color: #d5e8d0;
+    }
+
+    .vista-tablet .caja3,
+    .vista-tablet .caja4 {
+        background-color: #fff2cc;
+    }
+
+    .vista-tablet .caja5 {
+        background-color: #f4cccc;
+    }
+
+    .vista-tablet .caja6 {
+        background-color: #c9daf8;
+    }
+}
+
+
+
+@media (max-width: 30em) {
+
+    .vista-tablet {
+        display: none;
+    }
+
+    .vista-normal {
+        width: 100%;
+        height: 100%;
+
+        display: block;
+    }
+
+    .fila-superior {
+        width: 100%;
+        height: 66.66%;
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    .fila-superior .caja1,
+    .fila-superior .caja4 {
+        width: 100%;
+        height: 25%;
+        flex-basis: 25%;
+    }
+
+    .columna-central {
+        width: 100%;
+        height: 50%;
+        flex-basis: 50%;
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    .columna-central .caja {
+        width: 100%;
+        height: 50%;
+        flex-basis: 50%;
+    }
+
+    .fila-inferior {
+        width: 100%;
+        height: 33.34%;
+
+        display: flex;
+        flex-direction: column;
+    }
+
+    .fila-inferior .caja {
+        width: 100%;
+        height: 50%;
+        flex-basis: 50%;
+    }
+
+    .caja1,
+    .caja2 {
+        background-color: #d5e8d0;
+    }
+
+    .caja3,
+    .caja4 {
+        background-color: #fff2cc;
+    }
+
+    .caja5 {
+        background-color: #c9daf8;
+    }
+
+    .caja6 {
+        background-color: #f4cccc;
+    }
+}
